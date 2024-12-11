@@ -3,49 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sponsor Check</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sponsor Table</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
 
-    <h1>Sponsor Check Table</h1>
-    <table id="sponsor-table">
+    <h1 id="page-title">Sponsor Table</h1> <!-- The title will be updated dynamically -->
+
+    <table>
         <thead>
             <tr>
                 <th>Sponsor</th>
-                <th>Items</th>
-                <th>Definitions</th>
+                <th>Item</th>
+                <th>Definition</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><a href="#" onclick="updateColumns(0)">Sponsor 1</a></td>
-                <td id="item-0">Item 1</td>
-                <td id="def-0">Definition of Item 1</td>
+                <td><a href="#" onclick="changeSponsor(1)">Sponsor 1</a></td>
+                <td id="item1">Item 1</td>
+                <td id="def1" onclick="copyToClipboard('def1')">Definition 1</td>
             </tr>
             <tr>
-                <td><a href="#" onclick="updateColumns(1)">Sponsor 2</a></td>
-                <td id="item-1">Item 2</td>
-                <td id="def-1">Definition of Item 2</td>
+                <td><a href="#" onclick="changeSponsor(2)">Sponsor 2</a></td>
+                <td id="item2">Item 2</td>
+                <td id="def2" onclick="copyToClipboard('def2')">Definition 2</td>
             </tr>
             <tr>
-                <td><a href="#" onclick="updateColumns(2)">Sponsor 3</a></td>
-                <td id="item-2">Item 3</td>
-                <td id="def-2">Definition of Item 3</td>
+                <td><a href="#" onclick="changeSponsor(3)">Sponsor 3</a></td>
+                <td id="item3">Item 3</td>
+                <td id="def3" onclick="copyToClipboard('def3')">Definition 3</td>
             </tr>
             <tr>
-                <td><a href="#" onclick="updateColumns(3)">Sponsor 4</a></td>
-                <td id="item-3">Item 4</td>
-                <td id="def-3">Definition of Item 4</td>
+                <td><a href="#" onclick="changeSponsor(4)">Sponsor 4</a></td>
+                <td id="item4">Item 4</td>
+                <td id="def4" onclick="copyToClipboard('def4')">Definition 4</td>
             </tr>
             <tr>
-                <td><a href="#" onclick="updateColumns(4)">Sponsor 5</a></td>
-                <td id="item-4">Item 5</td>
-                <td id="def-4">Definition of Item 5</td>
+                <td><a href="#" onclick="changeSponsor(5)">Sponsor 5</a></td>
+                <td id="item5">Item 5</td>
+                <td id="def5" onclick="copyToClipboard('def5')">Definition 5</td>
             </tr>
         </tbody>
     </table>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Link to external JS -->
 </body>
 </html>
